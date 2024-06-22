@@ -15,17 +15,17 @@ const Navbar = ({ className }: { className?: string }) => {
             </MenuItem>
             </Link>
             <Link href={"/skills"}>
-            <MenuItem setActive={setActive} active={active} item="About Me">
+            <MenuItem setActive={setActive} active={active} item="About">
             </MenuItem>
             </Link>
             <Link href={"/projects"}>
             <MenuItem
-            setActive={setActive} active={active} item="My Projects"
+            setActive={setActive} active={active} item="Projects"
             >
             </MenuItem>
             </Link>
             <Link href={"/contact"}>
-            <MenuItem setActive={setActive} active={active} item="Contact Me">      
+            <MenuItem setActive={setActive} active={active} item="Contact">      
             </MenuItem>
             </Link>
         </Menu>

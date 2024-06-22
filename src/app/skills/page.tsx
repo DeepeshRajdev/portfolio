@@ -149,18 +149,18 @@ const page = () => {
   return (
   
      <div>     
-      <div className="h-[45rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <h2 className="z-50 text-3xl lg:text-4xl font-bold text-center mt-30 mb-4 md:z-10"> <TypewriterEffectSmooth words={words} /> </h2>
+      <div className="w-screen h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <h2 className="z-50 text-3xl lg:text-4xl font-bold text-center mt-30 mb-4 md:z-10"> <TypewriterEffectSmooth words={words} /> </h2>    
       <h1 className="font-bold text-center text-white relative z-20">
         {/*md:text-3xl text-xl lg:text-4xl*/}
-      <TextGenerateEffect words = {word}/>
+        <TextGenerateEffect words = {word}/>     
       </h1>
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
           speed="normal"
         />
-         <div className="flex flex-row items-center justify-center mt-20 mb-5 w-full absolute bottom-10">
+         <div className="bottom-0 flex flex-row items-center justify-center mt-20 mb-5 w-full absolute md:bottom-5">
       <AnimatedTooltip items={people} />
     </div>
       </div>
