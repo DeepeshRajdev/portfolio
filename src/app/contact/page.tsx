@@ -26,7 +26,7 @@ function MusicSchoolContactUs() {
           Contact Me
         </h1>
         <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center">
-        I'm available for swe and sde positions for intern and full time both.
+        I am available for swe and sde positions for intern and full time both.
 I am also open to opportunities for  Winter 2024 and Summer 2025.
         </p>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">

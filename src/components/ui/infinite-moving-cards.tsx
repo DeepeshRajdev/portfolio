@@ -2,7 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
-
+import Image from "next/image";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
@@ -23,10 +23,6 @@ export const InfiniteMovingCards = ({
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
-
-  useEffect(() => {
-    addAnimation();
-  }, []);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -38,6 +34,10 @@ export const InfiniteMovingCards = ({
           scrollerRef.current.appendChild(duplicatedItem);
         }
       });
+  useEffect(() => {
+    addAnimation();
+  }, [addAnimation]);
+ 
 
       getDirection();
       getSpeed();
@@ -102,7 +102,14 @@ export const InfiniteMovingCards = ({
               >
                 </div>
               <span className="flex items-center justify-center relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-              <img  src={item.image} alt="img" className="w-20 h-30 object-fit: cover;" />
+              <Image 
+  src={item.image} 
+  alt="img" 
+  width={80} 
+  height={120} 
+  objectFit="cover" 
+  className="w-20 h-30"
+/>
               </span>
               
               {/* <div className="relative z-20 mt-6 flex flex-row items-center">
