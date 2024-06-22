@@ -61,7 +61,9 @@ const page = () => {
                     />
                   </CardItem>
                   <div className="flex justify-between items-center mt-20">
-                  <Link href={`/projects/${course.id}`}>
+                  {
+                    /*
+                    <Link href={`/projects/${course.id}`}>
                     <CardItem
                       translateZ={20}
                       as="button"
@@ -70,6 +72,8 @@ const page = () => {
                       KNOW MORE →
                     </CardItem>
                     </Link>
+                    */
+                  }
                     <Link href={course.go}>
                     <CardItem
                       translateZ={20}
